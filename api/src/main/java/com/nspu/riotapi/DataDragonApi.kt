@@ -58,7 +58,7 @@ class DataDragonApi(
      *   @param context context of application.If context is null, the cache will be not use
      *   @constructor thread that created the instances.
      */
-    constructor(context: Context?) : this(
+    constructor(    context: Context?) : this(
             Executors.newSingleThreadExecutor(),
             context)
 

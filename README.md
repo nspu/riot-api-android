@@ -3,6 +3,8 @@
 This project is a wrapper for [Riot API](https://developer.riotgames.com/).
 It uses [Retrofit](http://square.github.io/retrofit/) and [Picasso](http://square.github.io/picasso/).
 
+Do not publish your api key, you can use a proxy. Tuto : [How to secure your API key using a proxy ](https://discussion.developer.riotgames.com/articles/3333/how-to-secure-your-api-key-using-a-proxy.html)
+
 [Documentation here](https://nspu.github.io/riot-api-android/docs/index.html)
 
 ## Getting starting
@@ -25,14 +27,13 @@ var call: Call<ChampionListData> = dataDragon.getChampions() //champions list
 var call: Call<ShardStatus> = riotApi.getLoLStatus() //servers status
 ```
 
+[Doc about Call (Retrofit)](https://square.github.io/retrofit/2.x/retrofit/retrofit2/Call.html)
+
 #### You can pass optional options for riot api
 ```kotlin 
 val options = mapOf("Accept-Language" to "en-US,en;q=0.5")
 riotApi.matchService.getMatchById(000000000, options)
 ```
-
-
-[Doc about Call (Retrofit)](https://square.github.io/retrofit/2.x/retrofit/retrofit2/Call.html)
 
 
 ## Image
