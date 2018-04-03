@@ -1,0 +1,40 @@
+[
+  {
+    "leagueId": "6f309450-023f-11e8-bc10-c81f66cf135e",
+    "leagueName": "Shen's Berserkers",
+    "tier": "DIAMOND",
+    "queueType": "RANKED_FLEX_SR",
+    "rank": "I",
+    "playerOrTeamId": "25166026",
+    "playerOrTeamName": "Ivan Pavlov",
+    "leaguePoints": 100,
+    "wins": 103,
+    "losses": 91,
+    "veteran": true,
+    "inactive": false,
+    "freshBlood": false,
+    "hotStreak": true,
+    "miniSeries": {
+      "target": 3,
+      "wins": 0,
+      "losses": 0,
+      "progress": "NNNNN"
+    }
+  },
+  {
+    "leagueId": "930faadc-f191-3fc0-b715-79804ef73cfc",
+    "leagueName": "Taric's Shadehunters",
+    "tier": "CHALLENGER",
+    "queueType": "RANKED_SOLO_5x5",
+    "rank": "I",
+    "playerOrTeamId": "25166026",
+    "playerOrTeamName": "Ivan Pavlov",
+    "leaguePoints": 391,
+    "wins": 67,
+    "losses": 47,
+    "veteran": false,
+    "inactive": false,
+    "freshBlood": false,
+    "hotStreak": false
+  }
+]

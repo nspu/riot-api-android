@@ -1,0 +1,30 @@
+{
+  "prereq": "0",
+  "masteryTree": "Ferocity",
+  "name": "Vampirism",
+  "ranks": 5,
+  "image": {
+    "full": "6131.png",
+    "group": "mastery",
+    "sprite": "mastery0.png",
+    "h": 48,
+    "w": 48,
+    "y": 0,
+    "x": 240
+  },
+  "sanitizedDescription": [
+    "+0.4% Lifesteal and Spell Vamp",
+    "+0.8% Lifesteal and Spell Vamp",
+    "+1.2% Lifesteal and Spell Vamp",
+    "+1.6% Lifesteal and Spell Vamp",
+    "+2.0% Lifesteal and Spell Vamp"
+  ],
+  "id": 6131,
+  "description": [
+    "+0.4% Lifesteal and Spell Vamp",
+    "+0.8% Lifesteal and Spell Vamp",
+    "+1.2% Lifesteal and Spell Vamp",
+    "+1.6% Lifesteal and Spell Vamp",
+    "+2.0% Lifesteal and Spell Vamp"
+  ]
+}

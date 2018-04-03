@@ -1,0 +1,20 @@
+{
+  "lg": "8.5.2",
+  "dd": "8.5.2",
+  "l": "en_US",
+  "n": {
+    "summoner": "8.5.2",
+    "map": "8.5.2",
+    "champion": "8.5.2",
+    "language": "8.5.2",
+    "mastery": "7.23.1",
+    "sticker": "8.5.2",
+    "item": "8.5.2",
+    "rune": "7.23.1",
+    "profileicon": "8.5.2"
+  },
+  "profileiconmax": 28,
+  "v": "8.5.2",
+  "cdn": "http://ddragon.leagueoflegends.com/cdn",
+  "css": "8.5.2"
+}

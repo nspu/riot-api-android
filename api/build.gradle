@@ -1,0 +1,82 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: "org.jetbrains.dokka"
+
+version = VERSION
+
+android {
+    compileSdkVersion 27
+
+
+
+    defaultConfig {
+        minSdkVersion 19
+        targetSdkVersion 27
+        versionCode 1
+        versionName VERSION
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            testCoverageEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$KOTLIN_VERSION"
+
+    implementation "com.squareup.picasso:picasso:$PICASSO_VERSION"
+
+    implementation "com.squareup.okhttp3:okhttp:$OK_HTTP_3_VERSION"
+    implementation "com.squareup.okhttp3:logging-interceptor:$OK_HTTP_3_VERSION"
+
+    implementation "com.squareup.retrofit2:retrofit:$RETROFIT_2_VERSION"
+    implementation "com.squareup.retrofit2:converter-gson:$RETROFIT_2_VERSION"
+    implementation "com.squareup.retrofit2:adapter-rxjava:$RETROFIT_2_VERSION"
+
+
+    //test
+    testImplementation("org.robolectric:robolectric:$ROBOLECTRIC_VERSION") {
+        exclude group: "com.android.support", module: "support-v4"
+        exclude group: "commons-logging", module: "commons-logging"
+        exclude group: "org.apache.httpcomponents", module: "httpclient"
+    }
+    testImplementation "com.google.guava:guava:$GUAVA_VERSION"
+    testImplementation "junit:junit:$JUNIT_VERSION"
+    testImplementation "org.easytesting:fest-assert-core:$FEST_ASSERT_CORE_VERSION"
+    testImplementation "org.mockito:mockito-core:$MOCKITO_CORE_VERSION"
+    testImplementation "com.squareup.okhttp3:mockwebserver:$OK_HTTP_3_VERSION"
+
+    androidTestImplementation "com.android.support.test:runner:$RUNNER_VERSION"
+    androidTestImplementation "com.android.support.test.espresso:espresso-core:$ESPRESSO_VERSION"
+}
+repositories {
+    mavenCentral()
+}
+
+// make proper name for "aar" file
+android.libraryVariants.all { variant ->
+    variant.outputs.each { output ->
+        def outputFile = output.outputFile
+        if (outputFile != null && outputFile.name.endsWith(".aar")) {
+            def fileName = "${"riot-api"}-${version}.aar"
+            output.outputFileName = new File(fileName)
+        }
+    }
+}
+
+dokka {
+    outputFormat = "javadoc"
+    outputDirectory = "$rootDir/docs"
+}
+

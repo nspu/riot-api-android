@@ -1,0 +1,28 @@
+{
+  "image": {
+    "full": "r_1_1.png",
+    "sprite": "rune0.png",
+    "group": "rune",
+    "x": 96,
+    "y": 0,
+    "w": 48,
+    "h": 48
+  },
+  "stats": {
+    "PercentCooldownMod": -0.0011
+  },
+  "name": "Lesser Mark of Cooldown Reduction",
+  "description": "-0.11% cooldowns",
+  "id": 5021,
+  "sanitizedDescription": "-0.11% cooldowns",
+  "tags": [
+    "utility",
+    "percent",
+    "mark"
+  ],
+  "rune": {
+    "isRune": true,
+    "tier": "1",
+    "type": "red"
+  }
+}

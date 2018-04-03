@@ -1,0 +1,53 @@
+{
+  "stats": {
+    "FlatArmorMod": 40
+  },
+  "description": "<stats>+40 Armor</stats><br><br><unique>UNIQUE Passive - Cold Steel:</unique> When hit by basic attacks, reduces the attacker's Attack Speed by 15% for 1 seconds.",
+  "gold": {
+    "total": 1000,
+    "sell": 700,
+    "base": 400,
+    "purchasable": true
+  },
+  "tags": [
+    "Armor",
+    "Slow"
+  ],
+  "plaintext": "Slows Attack Speed of enemy champions when receiving basic attacks",
+  "image": {
+    "full": "3082.png",
+    "group": "item",
+    "sprite": "item1.png",
+    "h": 48,
+    "w": 48,
+    "y": 96,
+    "x": 48
+  },
+  "sanitizedDescription": "+40 Armor UNIQUE Passive - Cold Steel: When hit by basic attacks, reduces the attacker's Attack Speed by 15% for 1 seconds.",
+  "effect": {
+    "Effect1Amount": "-0.15",
+    "Effect2Amount": "1"
+  },
+  "id": 3082,
+  "maps": {
+    "8": true,
+    "10": true,
+    "11": true,
+    "12": true,
+    "14": true,
+    "16": false,
+    "18": true,
+    "19": true
+  },
+  "depth": 2,
+  "from": [
+    "1029",
+    "1029"
+  ],
+  "into": [
+    "3110",
+    "3143",
+    "3075"
+  ],
+  "name": "Warden's Mail"
+}
