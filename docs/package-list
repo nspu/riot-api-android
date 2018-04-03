@@ -1,7 +1,6 @@
 android.support.exifinterface
-com.nspu.riot.api
+com.nspu.riotapi
+com.nspu.riotapi.models
+com.nspu.riotapi.services.datadragon
+com.nspu.riotapi.services.riot
 com.squareup.picasso
-fr.nspu.riot.api
-fr.nspu.riot.api.models
-fr.nspu.riot.api.services.datadragon
-fr.nspu.riot.api.services.riot

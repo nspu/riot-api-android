@@ -6,7 +6,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Tournament</title>
 <meta name="date" content="2018-04-03">
-<meta name="keywords" content="fr.nspu.riot.api.services.riot.Tournament interface">
+<meta name="keywords" content="com.nspu.riotapi.services.riot.Tournament interface">
 <meta name="keywords" content="createCodes()">
 <meta name="keywords" content="updateCodes()">
 <meta name="keywords" content="getTournamentInfoByTournamentId()">
@@ -55,8 +55,8 @@ var activeTableTab = "activeTableTab";
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../../../../fr/nspu/riot/api/services/riot/ThirdPartyCodeService.html" title="interface in fr.nspu.riot.api.services.riot"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../../../../fr/nspu/riot/api/services/riot/TournamentStub.html" title="interface in fr.nspu.riot.api.services.riot"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../../../fr/nspu/riot/api/services/riot/ThirdPartyCodeService.html" title="interface in com.nspu.riotapi.services.riot"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../../../../fr/nspu/riot/api/services/riot/TournamentStub.html" title="interface in com.nspu.riotapi.services.riot"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../../../index.html?fr/nspu/riot/api/services/riot/Tournament.html" target="_top">Frames</a></li>
@@ -98,7 +98,7 @@ var activeTableTab = "activeTableTab";
 <!-- ========= END OF TOP NAVBAR ========= -->
 <!-- ======== START OF CLASS DATA ======== -->
 <div class="header">
-<div class="subTitle">fr.nspu.riot.api.services.riot</div>
+<div class="subTitle">com.nspu.riotapi.services.riot</div>
 <h2 title="Interface Tournament" class="title">Interface Tournament</h2>
 </div>
 <div class="contentContainer">
@@ -149,17 +149,17 @@ Implementation Notes : Providers will need to call this endpoint first to regist
 </td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code>retrofit2.Call&lt;fr.nspu.riot.api.models.LobbyEvent&gt;</code></td>
+<td class="colFirst"><code>retrofit2.Call&lt;com.nspu.riotapi.models.LobbyEvent&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/nspu/riot/api/services/riot/Tournament.html#getListLobbyEventByTournamentCode-tournamentCode-options-">getListLobbyEventByTournamentCode</a></span>(java.lang.String&nbsp;tournamentCode,
                                  java.util.Map&lt;java.lang.String,java.lang.String&gt;&nbsp;options)</code>
 <div class="block">Gets a list of lobby events by tournament code</div>
 </td>
 </tr>
 <tr id="i4" class="altColor">
-<td class="colFirst"><code>retrofit2.Call&lt;fr.nspu.riot.api.models.TournamentCode&gt;</code></td>
+<td class="colFirst"><code>retrofit2.Call&lt;com.nspu.riotapi.models.TournamentCode&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/nspu/riot/api/services/riot/Tournament.html#getTournamentInfoByTournamentId-tournamentCode-options-">getTournamentInfoByTournamentId</a></span>(java.lang.String&nbsp;tournamentCode,
                                java.util.Map&lt;java.lang.String,java.lang.String&gt;&nbsp;options)</code>
-<div class="block">Returns the tournament code DTO(<a href="../../../../../../fr/nspu/riot/api/models/TournamentCode.html" title="class in fr.nspu.riot.api.models"><code>class TournamentCode</code></a>) associated with a tournament code string.</div>
+<div class="block">Returns the tournament code DTO(<a href="../../../../../../fr/nspu/riot/api/models/TournamentCode.html" title="class in com.nspu.riotapi.models"><code>class TournamentCode</code></a>) associated with a tournament code string.</div>
 </td>
 </tr>
 <tr id="i5" class="rowColor">
@@ -226,17 +226,17 @@ Implementation Notes : Providers will need to call this endpoint first to regist
 <ul class="blockList">
 <li class="blockList">
 <h4>getTournamentInfoByTournamentId</h4>
-<pre>retrofit2.Call&lt;fr.nspu.riot.api.models.TournamentCode&gt;&nbsp;getTournamentInfoByTournamentId(java.lang.String&nbsp;tournamentCode,
+<pre>retrofit2.Call&lt;com.nspu.riotapi.models.TournamentCode&gt;&nbsp;getTournamentInfoByTournamentId(java.lang.String&nbsp;tournamentCode,
                                                                                        java.util.Map&lt;java.lang.String,java.lang.String&gt;&nbsp;options)</pre>
-<div class="block"><p><p>Returns the tournament code DTO(<a href="../../../../../../fr/nspu/riot/api/models/TournamentCode.html" title="class in fr.nspu.riot.api.models"><code>class TournamentCode</code></a>) associated with a tournament code string.</p></p></div>
+<div class="block"><p><p>Returns the tournament code DTO(<a href="../../../../../../fr/nspu/riot/api/models/TournamentCode.html" title="class in com.nspu.riotapi.models"><code>class TournamentCode</code></a>) associated with a tournament code string.</p></p></div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>tournamentCode</code> - The short code to look up lobby events for</dd>
 <dd><code>options</code> - Optional parameters. Nullable</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>Call requested tournament info <a href="../../../../../../fr/nspu/riot/api/models/TournamentCode.html" title="class in fr.nspu.riot.api.models"><code>class TournamentCode</code></a></dd>
+<dd>Call requested tournament info <a href="../../../../../../fr/nspu/riot/api/models/TournamentCode.html" title="class in com.nspu.riotapi.models"><code>class TournamentCode</code></a></dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../fr/nspu/riot/api/models/TournamentCode.html" title="class in fr.nspu.riot.api.models"><code>class TournamentCode</code></a></dd>
+<dd><a href="../../../../../../fr/nspu/riot/api/models/TournamentCode.html" title="class in com.nspu.riotapi.models"><code>class TournamentCode</code></a></dd>
 </dl>
 </li>
 </ul>
@@ -246,7 +246,7 @@ Implementation Notes : Providers will need to call this endpoint first to regist
 <ul class="blockList">
 <li class="blockList">
 <h4>getListLobbyEventByTournamentCode</h4>
-<pre>retrofit2.Call&lt;fr.nspu.riot.api.models.LobbyEvent&gt;&nbsp;getListLobbyEventByTournamentCode(java.lang.String&nbsp;tournamentCode,
+<pre>retrofit2.Call&lt;com.nspu.riotapi.models.LobbyEvent&gt;&nbsp;getListLobbyEventByTournamentCode(java.lang.String&nbsp;tournamentCode,
                                                                                      java.util.Map&lt;java.lang.String,java.lang.String&gt;&nbsp;options)</pre>
 <div class="block"><p><p>Gets a list of lobby events by tournament code</p></p></div>
 <dl>
@@ -318,8 +318,8 @@ Implementation Notes : Providers will need to call this endpoint first to regist
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../../../../fr/nspu/riot/api/services/riot/ThirdPartyCodeService.html" title="interface in fr.nspu.riot.api.services.riot"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../../../../fr/nspu/riot/api/services/riot/TournamentStub.html" title="interface in fr.nspu.riot.api.services.riot"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../../../fr/nspu/riot/api/services/riot/ThirdPartyCodeService.html" title="interface in com.nspu.riotapi.services.riot"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../../../../fr/nspu/riot/api/services/riot/TournamentStub.html" title="interface in com.nspu.riotapi.services.riot"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../../../index.html?fr/nspu/riot/api/services/riot/Tournament.html" target="_top">Frames</a></li>
