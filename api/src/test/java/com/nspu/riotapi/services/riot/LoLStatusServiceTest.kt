@@ -4,7 +4,6 @@ import com.nspu.riotapi.ServiceTest
 import com.nspu.riotapi.TestUtils
 import com.nspu.riotapi.models.ShardStatus
 import com.nspu.riotapi.services.riot.LoLStatusService
-import okhttp3.Call
 import okhttp3.Request
 import okhttp3.mockwebserver.MockResponse
 import org.junit.Test

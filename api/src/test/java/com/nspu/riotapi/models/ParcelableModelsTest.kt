@@ -2,22 +2,16 @@ package com.nspu.riotapi.Service
 
 import android.os.Parcel
 import android.os.Parcelable
-
 import com.google.common.collect.Lists
-import com.google.gson.GsonBuilder
 import com.nspu.riotapi.ModelAssert
 import com.nspu.riotapi.ModelPopulator
-import com.nspu.riotapi.TestUtils
 import com.nspu.riotapi.models.*
-
+import org.fest.assertions.api.Assertions.assertThat
 import org.fest.util.Arrays
 import org.junit.Test
 import org.junit.runner.RunWith
 import org.robolectric.RobolectricTestRunner
-
-import java.util.ArrayList
-
-import org.fest.assertions.api.Assertions.assertThat
+import java.util.*
 
 @RunWith(RobolectricTestRunner::class)
 class ParcelableModelsTest {
@@ -115,7 +109,7 @@ class ParcelableModelsTest {
 
         for (modelClass in modelClasses) {
 
-            val instance = populator.populateWithRandomValues(modelClass as Class<Parcelable>)
+            val instance = populator.populateWithRandomValues(modelClass)
 
             testSingleParcelable(instance)
             testParcelableArray(instance)

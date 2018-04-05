@@ -2,8 +2,8 @@ package com.nspu.riotapi.Service
 
 import com.nspu.riotapi.ServiceTest
 import com.nspu.riotapi.TestUtils
-import com.nspu.riotapi.services.datadragon.DataDragonService
 import com.nspu.riotapi.models.*
+import com.nspu.riotapi.services.datadragon.DataDragonService
 import okhttp3.Request
 import okhttp3.mockwebserver.MockResponse
 import org.junit.Test

@@ -7,11 +7,9 @@ import com.nspu.riotapi.services.riot.StaticDataService
 import okhttp3.Request
 import okhttp3.mockwebserver.MockResponse
 import org.junit.Test
-import org.junit.runner.RunWith
 import org.mockito.Matchers.argThat
 import org.mockito.Matchers.isA
 import org.mockito.Mockito.`when`
-import org.robolectric.RobolectricTestRunner
 import retrofit2.Retrofit
 import java.io.IOException
 

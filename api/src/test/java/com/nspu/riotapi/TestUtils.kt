@@ -7,7 +7,10 @@ import okhttp3.Request
 import okhttp3.Response
 import okio.BufferedSource
 import org.robolectric.Robolectric
-import java.io.*
+import java.io.ByteArrayInputStream
+import java.io.File
+import java.io.FileReader
+import java.io.IOException
 import java.lang.reflect.Type
 import java.nio.CharBuffer
 import java.nio.charset.Charset
