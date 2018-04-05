@@ -1,4 +1,4 @@
-# Riot API for Android
+# Riot API for Android  [![Build Status](https://travis-ci.org/nspu/riot-api-android.svg?branch=master)](https://travis-ci.org/nspu/riot-api-android)
 
 This project is a wrapper for [Riot API](https://developer.riotgames.com/).
 It uses [Retrofit](http://square.github.io/retrofit/) and [Picasso](http://square.github.io/picasso/).
